@@ -1,13 +1,12 @@
-from urllib.request import urlopen
-from bs4 import BeautifulSoup
+from PyQt5 import QtWidgets
+from PyQt5.QtWidgets import QApplication, QMainWindow
 
-url = "http://py4e-data.dr-chuck.net/comments_1776813.html"
-html = urlopen(url).read()
-soup = BeautifulSoup(html, "html.parser")
+import sys
 
-total = 0
-for tag in soup.select('tr:has(.comments)'):
-    value = int(tag.select_one('.comments').text)
-    total += value
+def application():
+   app = QApplication(sys.argv)
+   window = QMainWindow()
 
-print(total)
+   window.show
+   sys.exit(app.exec_()) 
+    
