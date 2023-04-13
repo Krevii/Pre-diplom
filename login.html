@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link href="./Assets/styles/style.css" rel="stylesheet" />
+    <link href="./Assets/image/favicon.png" rel="icon" />
+</head>
+
+<body>
+    <header id="header">
+        <div class="bone">
+            <div>
+                <a href="./index.html">
+                    <img class="logoV" src="./Assets/image/Logo-Vertical.png" alt="logo" />
+                </a>
+            </div>
+
+            <nav>
+                <a class="line-root">
+                    <div class="line-menu"></div>
+                    <div class="line-menu"></div>
+                    <div class="line-menu"></div>
+                </a>
+            </nav>
+        </div>
+
+        <div class="select-menu">
+            <div class="root-nav-item">
+                <a href="./index.html" class="nav-item">general</a>
+                <a href="./feedback.html" class="nav-item">Feedback</a>
+                <a href="./login.html" class="nav-item">login</a>
+                <a href="./blog.html" class="nav-item">blog</a>
+                
+            </div>
+            <div class="root-block">
+                <div class="menu-block">
+                    <a href="./index.html#content">
+                        <h3 class="menu-block-text">
+                            KEY FEATURES
+                        </h3>
+                        <img src="./Assets/image/background.png" alt="w" />
+                    </a>
+                </div>
+                <div class="menu-block">
+                    <a href="./index.html#roadmap">
+                        <h3 class="menu-block-text">
+                            ABOUT GAME
+                        </h3>
+                        <!-- <img src="./Assets/image/back-menu1.jpg/" alt="w"/> -->
+                    </a>
+                </div>
+                <div class="menu-block" style="background-color: var(--text-color);">
+                    <a href="./index.html#content">
+                        <h3 class="menu-block-text">
+                            ROADMAP
+                        </h3>
+                        <!-- <img src="./Assets/image/background.png" alt="w"/> -->
+                    </a>
+                </div>
+            </div>
+            <div class="menu-footer">
+                <a class="theme-switch" href="./index.html#content">
+                    <img class="lamp-img" src="./Assets/image/icon-theme-light.png" alt="theme"/>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="login">
+            <div class="form">
+
+                <!-- <div class="text-contain">
+                    <h2 class="intro-header">JOIN THE ENERGY REVOLUTION</h2>
+                </div> -->
+                <div class="text-contain-active">
+                    <div class="left-line">
+                        <div class="intro-header">JOIN THE</div>
+                        <div class="intro-header">game</div>
+                        <div class="intro-header">REVOLUTION</div>
+
+                    </div>
+                </div>
+                <form method="post" autocomplete="off" action="./laba.js">
+                    <label>STAY UP TO DATE WITH OUR PROGRESS AND HOW YOU CAN SUPPORT US</label>
+                    <input name="first-name" autofocus required placeholder="First name">
+                    <input name="last-name" autofocus required placeholder="Last name">
+                    <input id="text-input" name="login" autofocus required placeholder="E-mail">
+                    <input type="password" name="password" required placeholder="password">
+                    <div id="verify-block">
+                        <label id="verify-lable"> </label>
+                    </div>
+                    <input type="submit" value="Sing Up">
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./Assets/scripts/validation.js"></script>
+    <script src="./Assets/scripts/scripts.js"></script>
+</body>
+
+</html>
