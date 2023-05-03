@@ -12,3 +12,6 @@ class Controller:
 
     def add_data(self, data):
         self.model.add_data(data)
+
+    def report_validation(self):
+        self.model.report_validation()
